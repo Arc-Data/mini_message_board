@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    h1=title 
+    a(href="/") Go back
+    form(method="POST" action="/new")
+        label(for="user") User: 
+        input(type="text" name="user" id="user" required)
+        br
+
+        label(for="text") Name: 
+        input(type="text" name="text" id="text" required)
+        br
+
+        button(type="submit") Submit

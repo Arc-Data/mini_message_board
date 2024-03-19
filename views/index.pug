@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href="/new") Post a message
+  div.container.mx-auto.font-xl.bg-blue-950
+    each message in messages
+      h3=message.text
+      p=message.user 
+      p=message.added 
