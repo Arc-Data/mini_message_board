@@ -4,7 +4,11 @@ module.exports = {
     './views/**/*.pug',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'background': '#27272c',
+      }
+    },
   },
   plugins: [],
 }
