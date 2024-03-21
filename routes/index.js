@@ -23,10 +23,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mini Message Board', messages: messages });
 });
 
-router.get('/new', function(req, res, next) {
-  res.render('form', { title: "Publish Message"});
-})
-
 router.post('/new', function(req, res, next) {
   messages.push({
     text: req.body.text,
